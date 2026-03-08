@@ -9,7 +9,7 @@ import {
 } from "react-icons/si";
 import { Personal_info, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
-import fadeIn from "../animations/fadein";
+import FadeIn from "../animations/fadein";
 import RadialGradientBackground from "../backgrounds/RadialGradientBackground";
 
 const Hero = () => {
