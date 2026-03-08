@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { ChevronDow, Section, Star } from "lucide-react";
+import { ChevronDown, Section, Star } from "lucide-react";
 import {
   SiReact,
   SiTailwindcss,
   SiNextdotjs,
-  SiNodedotj,
+  SiNodedotjs,
   SiMongodb,
 } from "react-icons/si";
 import { Personal_info, STATS } from "../../utils/constants";
