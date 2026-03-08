@@ -18,8 +18,8 @@ export const Social_links = {
 
 export const STATS = [
   { label: "Years Of Experience", value: "2+" },
-  { label: "Projects Completed", value: "5+" },
   { label: "Programming Languages", value: "3+" },
+  { label: "Projects Completed", value: "5+" },
   { label: "Client satisfaction", value: "N/A" },
 ];
 

@@ -75,7 +75,7 @@ const Hero = () => {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[500px] ml-auto group ">
                 <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                  <div className="absolute inset-[-2px] bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl "></div>
+                  <div className="absolute inset-[-2px] bg-linear-to-r from-[#f0e68c]/20 via-[#f0e68c]/10 to-[#f0e68c] animate-spin-slow rounded-2xl "></div>
                 </div>
 
                 {/* Image container */}
@@ -91,16 +91,16 @@ const Hero = () => {
                 <div className="absolute bottom-6 left-6 z-20">
                   <FadeIn delay={500}>
                     <div className="flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
-                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-115 transition-transform duration-300">
                         <SiPython className="w-full h-full text-white" />
                       </div>
-                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-115 transition-transform duration-300">
                         <SiLuau className="w-full h-full text-white" />
                       </div>
-                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-115 transition-transform duration-300">
                         <SiGit className="w-full h-full text-white" />
                       </div>
-                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-115 transition-transform duration-300">
                         <SiCplusplus className="w-full h-full text-white" />
                       </div>
                     </div>
