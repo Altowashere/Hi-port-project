@@ -1,12 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Section, Star } from "lucide-react";
-import {
-  SiReact,
-  SiTailwindcss,
-  SiNextdotjs,
-  SiNodedotjs,
-  SiMongodb,
-} from "react-icons/si";
+import { SiPython, SiGit, SiLuau, SiCplusplus } from "react-icons/si";
 import { Personal_info, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
 import FadeIn from "../animations/fadein";
@@ -19,8 +13,8 @@ const Hero = () => {
 
       {/*Content container*/}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
-        <div className="grid-cols-1 lg:grid-cols2 gap-12 items-center">
-          {/*Left column - content*/}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          {/*Left column - content has the button and title and everything kinda*/}
           <div className="text-left">
             <FadeIn delay={0}>
               <div className="inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-primary/10 via-primary/15 to-primary/20 border border-primary/20 rounded-full">
@@ -51,14 +45,14 @@ const Hero = () => {
                 onClick={() => scrollToSection("contact")}
                 className="inline-flex items-center gap-0 mb-12 group"
               >
-                <div className="relative z-10 bg-white text-[#212121] rounded-[17.75px] px-[26px] py-[13px] text-base font-medium border border-white ">
+                <div className="relative z-10 bg-white text-[#212121] rounded-[17.75px] px-[26px] py-[13px] text-base font-medium border border-white hover:scale-110 transition-transform duration-300 ">
                   Contact Me
                 </div>
               </button>
             </FadeIn>
 
             <FadeIn delay={400}>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-full">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-full">
                 {STATS.map((stat, index) => (
                   <div
                     key={index}
@@ -75,6 +69,46 @@ const Hero = () => {
               </div>
             </FadeIn>
           </div>
+
+          {/* Right Column my cool tuff pic */}
+          <FadeIn delay={200}>
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl aspect-4/5 max-w-[500px] ml-auto group ">
+                <div className="absolute inset-0 rounded-2xl overflow-hidden">
+                  <div className="absolute inset-[-2px] bg-linear-to-r from-primary/20 via-primary/10 to-primary animate-spin-slow rounded-2xl "></div>
+                </div>
+
+                {/* Image container */}
+                <div className="relative rounded-2xl overflow-hidden m-[1px] h-[calc(100%-2px)]">
+                  <img
+                    src="/Tuff git pfp.jpg"
+                    alt=""
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Tech logos? I think bro means programming langagues logo */}
+                <div className="absolute bottom-6 left-6 z-20">
+                  <FadeIn delay={500}>
+                    <div className="flex items-center gap-4 bg-black/40 backdrop-blur-sm border border-white/10 rounded-full px-6 py-3">
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiPython className="w-full h-full text-white" />
+                      </div>
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiLuau className="w-full h-full text-white" />
+                      </div>
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiGit className="w-full h-full text-white" />
+                      </div>
+                      <div className="w-6 h-6 flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                        <SiCplusplus className="w-full h-full text-white" />
+                      </div>
+                    </div>
+                  </FadeIn>
+                </div>
+              </div>
+            </div>
+          </FadeIn>
         </div>
       </div>
     </section>

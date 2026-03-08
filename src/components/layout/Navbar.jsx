@@ -50,7 +50,7 @@ const Navbar = () => {
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
-                className={`text-base font-medium transition-all duration-300 ${
+                className={`text-base font-medium transition-all duration-300 hover:scale-140 ${
                   activeSection === link.id
                     ? "text-white"
                     : "text-white/70 hover:text-white"
@@ -65,7 +65,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-2">
             <button
               onClick={() => handleNavClick("contact")}
-              className="px-2.75 py-3 bg-white text-[#212121] font-medium text-base rounded-[14px] border border-white hover:bg-white/90 transition-all duration-300"
+              className="px-2.75 py-3 bg-white text-[#212121] font-medium text-base rounded-[14px] border border-white hover:bg-white/90 transition-all duration-300 hover:scale-105"
             >
               Navbar.jsx
             </button>
