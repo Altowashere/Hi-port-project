@@ -51,10 +51,10 @@ const Navbar = () => {
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
-                className={`text-base font-medium transition-all duration-300 hover:scale-140 ${
+                className={`text-base font-medium transition-all duration-300 hover:scale-140  ${
                   activeSection === link.id
                     ? "text-white"
-                    : "text-white/70 hover:text-white"
+                    : "text-white/70 hover:text-[#C9A84C]"
                 }`}
               >
                 {link.label}
