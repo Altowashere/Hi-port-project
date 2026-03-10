@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Code, Home, Menu, X } from "lucide-react";
+import { SiSpacex } from "react-icons/si";
 import { NAV_LINKS, Personal_info } from "../../utils/constants";
 import { scrollToSection, useScrollSpy } from "../../hooks/useScrollSpy";
 
@@ -33,7 +34,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/*logo Aka my name*/}
           <div className="flex items-center gap-4">
-            <Code className="w-6 h-6 text-[#C9A84C] hover:scale-110 transform-all duration-300" />
+            <SiSpacex className="w-6 h-6 scale-175 text-[#C9A84C] hover:scale-185 transform-all duration-300" />
 
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

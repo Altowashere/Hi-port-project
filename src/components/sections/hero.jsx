@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, Section, Star } from "lucide-react";
+import { ChevronDown, Section, Star, CodeXml } from "lucide-react";
 import { SiPython, SiGit, SiLuau, SiCplusplus } from "react-icons/si";
 import { Personal_info, STATS } from "../../utils/constants";
 import { scrollToSection } from "../../hooks/useScrollSpy";
@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="text-left">
             <FadeIn delay={0}>
               <div className="inline-flex items-center gap-2.5 px-[18px] py-[11px] mb-8 bg-linear-to-r from-[#C9A84C]/10 via-[#C9A84C]/15 to-[#C9A84C]/20 border border-[#C9A84C]/20 rounded-full">
-                <Star className="w-4 h-4 text-[#C9A84C] fill-[#C9A84C] hover:scale-125 transition-transform duration-300" />
+                <CodeXml className="w-4 h-4 scale-125 text-[#C9A84C] fill-[#C9A84C] hover:scale-135 transition-transform duration-300" />
                 <span className="text-xs md:text-sm text-white tracking-[1.2px]">
                   {Personal_info.title} | Based {Personal_info.location}
                 </span>
